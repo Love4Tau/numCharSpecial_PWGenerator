@@ -12,7 +12,7 @@ Overall, I had so much fun learning about how to create functions and variables 
 ## Installation
 
 Nothing to install to generate your secure password! Just click the link below:
-
+https://love4tau.github.io/numCharSpecial_PWGenerator/
 
 ## Usage
 
