@@ -15,12 +15,9 @@ Nothing to install to generate your secure password! Just click the link below:
 https://love4tau.github.io/numCharSpecial_PWGenerator/
 
 ## Usage
+Screenshot:
+    ![Image](./assets/images/screenshot.png)
 
-
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const - referred to this document
