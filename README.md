@@ -21,3 +21,7 @@ Screenshot:
 
 ## Credits
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const - referred to this document
+
+https://www.w3schools.com/js/js_if_else.asp - referred to this document
+
+https://www.w3schools.com/jsref/met_win_confirm.asp - referred to this document
