@@ -19,6 +19,12 @@ function generatePassword() {
     alert ("Your password does not meet requirements. Please enter another number.");
     return;
   } else {
+
+      const upCase = confirm('Do you want to include uppercase letters in your password? Please click "cancel" if you do not want uppercase letters.')
+      const lowCase = confirm('Do you want to include lowercase letters in your password? Please click "cancel" if you do not want lowercase letters.')
+      const num = confirm('Do you want to include numbers in your password? Please click "cancel" if you do not want numbers.')
+      const specialChars = confirm('Do you want to include symbols in your password? Please click "cancel" if you do not want symbols.')
+
     //loops through to meet length requirements
     for(i = 0; i < length; i++){
       passw += allChars[Math.floor(Math.random() * allChars.length)];
