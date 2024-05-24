@@ -10,7 +10,7 @@ function generatePassword() {
   const number = "0123456789";
   const symbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   var passw = "";
-  const allChars = upperCase + lowerCase + number + symbols;
+  var allChars = [];
   //Asking for user input for character length
   const length = prompt("Please choose a password between 8 and 128 characters.");
 
@@ -18,12 +18,35 @@ function generatePassword() {
   if (length < 8 || length > 128 || isNaN(length)){
     alert ("Your password does not meet requirements. Please enter another number.");
     return;
-  } else {
-
+  } 
+    // Prompted for user input and assigned that input
       const upCase = confirm('Do you want to include uppercase letters in your password? Please click "cancel" if you do not want uppercase letters.')
       const lowCase = confirm('Do you want to include lowercase letters in your password? Please click "cancel" if you do not want lowercase letters.')
       const num = confirm('Do you want to include numbers in your password? Please click "cancel" if you do not want numbers.')
       const specialChars = confirm('Do you want to include symbols in your password? Please click "cancel" if you do not want symbols.')
+
+    // Ensuring user picks out criteria for password
+      if(upCase === false && lowCase === false && num === false && specialChars === false) {
+        alert ("Your password does not meet requirements. Please choose valid criteria for password.");
+      return;
+    } else {
+
+    // Validating user input and to allChars if input is equal to true
+      if(upCase === true) {
+        allChars += upperCase;
+      }
+
+      if(lowCase === true) {
+        allChars += lowerCase;
+      }
+
+      if(num === true) {
+        allChars += number;
+      }
+
+      if(specialChars === true) {
+        allChars += symbols;
+      }
 
     //loops through to meet length requirements
     for(i = 0; i < length; i++){
